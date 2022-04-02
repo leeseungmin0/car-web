@@ -149,7 +149,6 @@ ul {
   width: 100%;
   height: 60px;
   font-size: 24px;
-  background-color: white;
   z-index: 10;
 }
 
@@ -161,8 +160,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 30px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   height: 100%;
+  background-color: white;
 }
 
 .model__container .model__menu span:nth-child(4) {
@@ -174,7 +174,7 @@ ul {
   position: sticky;
   top: 110px;
   width: 20%;
-  height: 400px;
+  height: 300px;
   padding-top: 50px;
   margin-top: 30px;
   border-right: 1px solid lightgray;
@@ -191,7 +191,7 @@ ul {
 
 .model__container .car__container {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,7 +203,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 750px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .model__container .car__container .sedan,
@@ -217,9 +218,5 @@ ul {
 .model__container .car__container img {
   width: 250px;
   height: 250px;
-}
-
-.test {
-  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

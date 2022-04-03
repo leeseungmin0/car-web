@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/287aa1e587.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="navbar__container">
@@ -54,31 +55,40 @@
         <span>EV</span>
       </div>
       <ul class="model__kind">
-        <li><i class="fa-solid fa-car-side"></i>Sedan</li>
-        <li><i class="fa-solid fa-car-side"></i>SUV</li>
-        <li><i class="fa-solid fa-car-side"></i>Coupe</li>
-        <li><i class="fa-solid fa-car-side"></i>Convertible</li>
+        <li data-filter="*">All</li>
+        <li data-filter="sedan">
+          <i class="fa-solid fa-car-side"></i><span>Sedan</span>
+        </li>
+        <li data-filter="suv">
+          <i class="fa-solid fa-car-side"></i><span>SUV</span>
+        </li>
+        <li data-filter="coupe">
+          <i class="fa-solid fa-car-side"></i><span>Coupe</span>
+        </li>
+        <li data-filter="convertible">
+          <i class="fa-solid fa-car-side"></i><span>Convertible</span>
+        </li>
       </ul>
       <div class="car__container">
-        <div class="sedan">
-          <img src="./img/car-img/sedan.png" alt="" />
-          <img src="./img/car-img/sedan.png" alt="" />
-          <img src="./img/car-img/sedan.png" alt="" />
+        <div class="car" data-type="sedan">
+          <img src="./img/car-img/sedan.png" />
+          <img src="./img/car-img/sedan.png" />
+          <img src="./img/car-img/sedan.png" />
         </div>
-        <div class="suv">
-          <img src="./img/car-img/suv.png" alt="" />
-          <img src="./img/car-img/suv.png" alt="" />
-          <img src="./img/car-img/suv.png" alt="" />
+        <div class="car" data-type="suv">
+          <img src="./img/car-img/suv.png" />
+          <img src="./img/car-img/suv.png" />
+          <img src="./img/car-img/suv.png" />
         </div>
-        <div class="coupe">
-          <img src="./img/car-img/coupe.png" alt="" />
-          <img src="./img/car-img/coupe.png" alt="" />
-          <img src="./img/car-img/coupe.png" alt="" />
+        <div class="car" data-type="coupe">
+          <img src="./img/car-img/coupe.png" />
+          <img src="./img/car-img/coupe.png" />
+          <img src="./img/car-img/coupe.png" />
         </div>
-        <div class="convertible">
-          <img src="./img/car-img/convertible.png" alt="" />
-          <img src="./img/car-img/convertible.png" alt="" />
-          <img src="./img/car-img/convertible.png" alt="" />
+        <div class="car" data-type="convertible">
+          <img src="./img/car-img/convertible.png" />
+          <img src="./img/car-img/convertible.png" />
+          <img src="./img/car-img/convertible.png" />
         </div>
       </div>
     </div>

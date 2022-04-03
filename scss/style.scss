@@ -24,6 +24,7 @@ ul {
   padding: 0 30px;
   border-bottom: 1px solid gray;
   z-index: 3;
+
   .navbar__menu {
     display: flex;
     justify-content: center;
@@ -31,6 +32,17 @@ ul {
     font-size: 18px;
     li {
       padding: 0 10px;
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        transition: 0.3s linear;
+        background-color: gray;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
   .navbar__logo {
@@ -46,6 +58,17 @@ ul {
     font-size: 18px;
     li {
       padding: 0 10px;
+      &::after {
+        content: "";
+        display: block;
+        background-color: gray;
+        width: 0;
+        height: 2px;
+        transition: 0.3s linear;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 }
@@ -68,16 +91,23 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-right: 1px solid lightgray;
     background-color: white;
     box-shadow: 5px 5px 10px lightgray;
-    font-size: 32px;
+    &:hover {
+      background-color: lightgray;
+      color: white;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
     i {
       text-align: center;
+      font-size: 42px;
       p {
         padding: 20px;
+        font-size: 28px;
       }
     }
   }

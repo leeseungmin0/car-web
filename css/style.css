@@ -50,6 +50,20 @@ ul {
   padding: 0 10px;
 }
 
+.navbar__container .navbar__menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  background-color: gray;
+}
+
+.navbar__container .navbar__menu li:hover::after {
+  width: 100%;
+}
+
 .navbar__container .navbar__logo {
   margin-right: 100px;
   font-size: 52px;
@@ -71,6 +85,20 @@ ul {
 
 .navbar__container .navbar__tools li {
   padding: 0 10px;
+}
+
+.navbar__container .navbar__tools li::after {
+  content: "";
+  display: block;
+  background-color: gray;
+  width: 0;
+  height: 2px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.navbar__container .navbar__tools li:hover::after {
+  width: 100%;
 }
 
 .home {
@@ -107,21 +135,30 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   border-right: 1px solid lightgray;
   background-color: white;
   -webkit-box-shadow: 5px 5px 10px lightgray;
           box-shadow: 5px 5px 10px lightgray;
-  font-size: 32px;
+}
+
+.purchase__container .purchase__item:hover {
+  background-color: lightgray;
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .purchase__container .purchase__item i {
   text-align: center;
+  font-size: 42px;
 }
 
 .purchase__container .purchase__item i p {
   padding: 20px;
+  font-size: 28px;
 }
 
 .model__container {

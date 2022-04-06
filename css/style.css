@@ -260,9 +260,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 900px;
-  width: 100%;
-  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .model__container .car__container .car {
@@ -271,6 +271,13 @@ ul {
 
 .model__container .car__container .car img {
   width: 280px;
+  height: 200px;
+}
+
+.car__container.car__animation {
+  opacity: 0;
+  -webkit-transform: scale(0.9) translateY(10px);
+          transform: scale(0.9) translateY(10px);
 }
 
 .invisible {

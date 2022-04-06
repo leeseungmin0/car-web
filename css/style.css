@@ -222,14 +222,27 @@ ul {
   padding-top: 50px;
   margin-top: 30px;
   border-right: 1px solid lightgray;
-  font-size: 18px;
 }
 
-.model__container .model__kind li {
+.model__container .model__kind ul {
   padding: 10px 0;
 }
 
-.model__container .model__kind li i {
+.model__container .model__kind ul li {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.model__container .model__kind ul li:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.model__container .model__kind ul i {
   padding-right: 10px;
 }
 

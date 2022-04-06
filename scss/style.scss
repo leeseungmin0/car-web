@@ -157,9 +157,18 @@ ul {
     padding-top: 50px;
     margin-top: 30px;
     border-right: 1px solid lightgray;
-    font-size: 18px;
-    li {
+    ul {
       padding: 10px 0;
+      li {
+        font-size: 24px;
+        cursor: pointer;
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: 0.4s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
       i {
         padding-right: 10px;
       }

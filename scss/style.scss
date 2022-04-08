@@ -78,20 +78,25 @@ ul {
   }
 }
 
-.home {
+.home__slides {
+  display: flex;
+  align-items: center;
+  max-width: 1980px;
   width: 100%;
-  height: auto;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: hidden;
   img {
     width: 100%;
-    max-height: 670px;
     height: 100%;
   }
 }
+
 .purchase__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -9% auto 7%;
+  margin: -5% auto 7%;
   .purchase__item {
     display: flex;
     justify-content: center;
@@ -171,9 +176,6 @@ ul {
           transition: 0.4s ease-in-out;
           transform: scale(1.1);
         }
-      }
-      i {
-        padding-right: 10px;
       }
     }
   }

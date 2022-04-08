@@ -108,14 +108,22 @@ ul {
   width: 100%;
 }
 
-.home {
+.home__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1980px;
   width: 100%;
-  height: auto;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.home img {
+.home__slides img {
   width: 100%;
-  max-height: 670px;
   height: 100%;
 }
 
@@ -129,7 +137,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: -9% auto 7%;
+  margin: -5% auto 7%;
 }
 
 .purchase__container .purchase__item {
@@ -245,10 +253,6 @@ ul {
   transition: 0.4s ease-in-out;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.model__container .model__kind ul i {
-  padding-right: 10px;
 }
 
 .model__container .car__container {

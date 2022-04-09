@@ -116,8 +116,8 @@ ul {
     background-color: white;
     border-radius: 10px;
     display: inline-block;
-    text-indent: -9999em;
     margin: 0 5px;
+    transition: 0.3s ease-in;
   }
   .active {
     background-color: #333;

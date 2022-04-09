@@ -58,7 +58,7 @@ homeContainer.addEventListener("mouseleave", () => {
   autoSlide();
 });
 
-// page
+// page button
 for (let i = 0; i < pageCount; i++) {
   page[i].addEventListener("click", (e) => {
     moveSlide(i);

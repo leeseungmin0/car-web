@@ -2,9 +2,10 @@
 
 //model filter
 const carContainer = document.querySelector(".car__container");
-const modelMenu = document.querySelector(".model__kind ul");
-const cars = document.querySelectorAll(".car");
-
+const modelKind = document.querySelector(".model__kind ul");
+const car = document.querySelectorAll(".cars");
+const modelMenu = document.querySelector(".model__menu");
+const carMenu = document.querySelectorAll(".car");
 //home img slide
 let homeContainer = document.querySelector(".home__container");
 let homeSlides = document.querySelector(".home__slides");
@@ -15,24 +16,6 @@ let picInterval = undefined;
 let page = document.querySelectorAll(".page span");
 let pageCount = page.length;
 
-modelMenu.addEventListener("click", (e) => {
-  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-  if (filter === null) {
-    return;
-  }
-  carContainer.classList.add("car__animation");
-  setTimeout(() => {
-    cars.forEach((car) => {
-      if (filter === "*" || filter === car.dataset.type) {
-        car.classList.remove("invisible");
-      } else {
-        car.classList.add("invisible");
-      }
-    });
-
-    carContainer.classList.remove("car__animation");
-  }, 300);
-});
 //home img slide
 for (let i = 0; i < count; i++) {
   slide[i].style.left = i * 100 + "%";
@@ -68,3 +51,44 @@ for (let i = 0; i < pageCount; i++) {
     e.target.classList.add("active");
   });
 }
+
+//car img filter top
+modelKind.addEventListener("click", (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter === null) {
+    return;
+  }
+  carContainer.classList.add("car__animation");
+  setTimeout(() => {
+    car.forEach((cars) => {
+      if (filter === "*" || filter === cars.dataset.type) {
+        cars.classList.remove("invisible");
+      } else {
+        cars.classList.add("invisible");
+      }
+    });
+    console.log(filter);
+    carContainer.classList.remove("car__animation");
+  }, 300);
+});
+
+//car img  filter left
+
+modelMenu.addEventListener("click", (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter === null) {
+    return;
+  }
+  carContainer.classList.add("car__animation");
+  setTimeout(() => {
+    carMenu.forEach((kind) => {
+      if (filter === "*" || filter === kind.dataset.type) {
+        kind.classList.remove("invisible1");
+      } else {
+        kind.classList.add("invisible1");
+      }
+    });
+    console.log(filter);
+    carContainer.classList.remove("car__animation");
+  }, 300);
+});

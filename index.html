@@ -61,10 +61,10 @@
     <div class="model__container">
       <h1>Model Overview</h1>
       <div class="model__menu">
-        <span>All Models</span>
-        <span>Sports Car</span>
-        <span>Hybrid</span>
-        <span>EV</span>
+        <span data-filter="*">All Models</span>
+        <span data-filter="sports">Sports Car</span>
+        <span data-filter="hybrid">Hybrid</span>
+        <span data-filter="ev">EV</span>
       </div>
       <div class="model__kind">
         <ul>
@@ -84,25 +84,49 @@
         </ul>
       </div>
       <div class="car__container">
-        <div class="car" data-type="sedan">
-          <img src="./img/car-img/sedan.png" />
-          <img src="./img/car-img/sedan.png" />
-          <img src="./img/car-img/sedan.png" />
+        <div class="cars" data-type="sedan">
+          <a href="#" class="car" data-type="hybrid">
+            <img src="./img/car-img/sedan.png" />
+          </a>
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/sedan.png" />
+          </a>
+          <a href="#" class="car" data-type="sports">
+            <img src="./img/car-img/sedan.png" />
+          </a>
         </div>
-        <div class="car" data-type="suv">
-          <img src="./img/car-img/suv.png" />
-          <img src="./img/car-img/suv.png" />
-          <img src="./img/car-img/suv.png" />
+        <div class="cars" data-type="suv">
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/suv.png" />
+          </a>
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/suv.png" />
+          </a>
+          <a href="#" class="car" data-type="hybrid">
+            <img src="./img/car-img/suv.png" />
+          </a>
         </div>
-        <div class="car" data-type="coupe">
-          <img src="./img/car-img/coupe.png" />
-          <img src="./img/car-img/coupe.png" />
-          <img src="./img/car-img/coupe.png" />
+        <div class="cars" data-type="coupe">
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/coupe.png" />
+          </a>
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/coupe.png" />
+          </a>
+          <a href="#" class="car" data-type="sports">
+            <img src="./img/car-img/coupe.png" />
+          </a>
         </div>
-        <div class="car" data-type="convertible">
-          <img src="./img/car-img/convertible.png" />
-          <img src="./img/car-img/convertible.png" />
-          <img src="./img/car-img/convertible.png" />
+        <div class="cars" data-type="convertible">
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/convertible.png" />
+          </a>
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/convertible.png" />
+          </a>
+          <a href="#" class="car" data-type="ev">
+            <img src="./img/car-img/convertible.png" />
+          </a>
         </div>
       </div>
     </div>

@@ -106,7 +106,7 @@ ul {
 .page {
   position: absolute;
   left: 0;
-  bottom: 120px;
+  bottom: 10%;
   right: 0;
   text-align: center;
   cursor: pointer;
@@ -217,12 +217,9 @@ ul {
     position: absolute;
     top: 20%;
     left: 25%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     opacity: 1;
     transition: all 0.3s ease-in-out;
-    .car {
+    .cars {
       width: 100%;
       img {
         width: 280px;
@@ -241,6 +238,9 @@ ul {
   display: none;
 }
 
+.invisible1 {
+  display: none;
+}
 footer {
   display: flex;
   justify-content: space-between;

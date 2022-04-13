@@ -322,11 +322,11 @@ ul {
           transform: scale(0.9) translateY(10px);
 }
 
-.invisible {
+.kind__invisible {
   display: none;
 }
 
-.invisible1 {
+.menu__invisible {
   display: none;
 }
 

@@ -62,9 +62,9 @@ modelKind.addEventListener("click", (e) => {
   setTimeout(() => {
     car.forEach((cars) => {
       if (filter === "*" || filter === cars.dataset.type) {
-        cars.classList.remove("invisible");
+        cars.classList.remove("kind__invisible");
       } else {
-        cars.classList.add("invisible");
+        cars.classList.add("kind__invisible");
       }
     });
     console.log(filter);
@@ -83,9 +83,9 @@ modelMenu.addEventListener("click", (e) => {
   setTimeout(() => {
     carMenu.forEach((kind) => {
       if (filter === "*" || filter === kind.dataset.type) {
-        kind.classList.remove("invisible1");
+        kind.classList.remove("menu__invisible");
       } else {
-        kind.classList.add("invisible1");
+        kind.classList.add("menu__invisible");
       }
     });
     console.log(filter);
